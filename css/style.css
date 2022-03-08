@@ -1,0 +1,57 @@
+:root {
+    --blue: #243d83;
+    --white: white;
+    --yellow: #ffb703;
+    --sky-blue: #6692cf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--sky-blue);
+}
+
+.roof {
+    width: 0;
+    height: 0;
+    border-left: 12.5rem solid transparent;
+    border-right: 12.5rem solid transparent;
+    border-bottom: 12.5rem solid var(--blue);
+}
+
+.ground {
+    width: 20rem;
+    height: 14rem;
+    background-color: var(--blue);
+    border-bottom: 1px solid var(--blue);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window {
+    height: 1.5rem;
+    width: 15rem;
+    background-color: var(--yellow);
+    border-radius: 10px;
+}
+
+.door {
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--yellow);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: -0.07rem;
+}
