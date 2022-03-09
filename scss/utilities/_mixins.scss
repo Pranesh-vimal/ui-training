@@ -1,0 +1,12 @@
+@mixin flex($justifyContent: left, $alignItems: left, $direction: row) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $direction;
+}
+
+@mixin button {
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    margin: 0rem 0.5rem;
+}

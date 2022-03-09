@@ -1,0 +1,109 @@
+.content {
+    @include flex($justifyContent: left, $alignItems: left);
+    padding: 1.5rem 0rem;
+    .content-1 {
+        @include flex(
+            $justifyContent: left,
+            $alignItems: left,
+            $direction: column
+        );
+        padding-top: 5%;
+        width: 50%;
+        .content-heading {
+            color: $primary-font-color;
+            font-size: 2.5rem;
+            padding-bottom: 2rem;
+        }
+        .content-caption {
+            color: $quaternary-font-color;
+            inline-size: 65%;
+        }
+        .content-button {
+            @include flex($justifyContent: flex-start);
+            margin-top: 9%;
+            .gs {
+                @include button;
+                background-color: $secondary-bg-color;
+                border: 1px solid $secondary-bg-color;
+                color: $secondary-font-color;
+                font-weight: bold;
+                margin-left: 0rem;
+                margin-right: 1rem;
+            }
+            .hiw {
+                @include button;
+                background-color: $primary-bg-color;
+                border: 1px solid $secondary-bg-color;
+                color: $tertiary-font-color;
+                font-weight: bold;
+                margin-left: 1rem;
+            }
+        }
+    }
+    .content-2 {
+        width: 50%;
+        @include flex($justifyContent: center);
+        img {
+            height: 90%;
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .content {
+        @include flex($justifyContent: left, $alignItems: left);
+        flex-wrap: wrap;
+        .content-1 {
+            width: 100%;
+            .content-heading {
+                font-size: 1.7rem;
+                text-align: center;
+            }
+            .content-caption {
+                text-align: center;
+                inline-size: 100%;
+                font-size: 0.9rem;
+            }
+            .content-button {
+                @include flex($justifyContent: flex-start, $direction: column);
+                row-gap: 1.5rem;
+                .gs {
+                    margin-left: 0.5rem;
+                    margin-right: 0.5rem;
+                    text-align: center;
+                }
+                .hiw {
+                    margin-left: 0.5rem;
+                    margin-right: 0.5rem;
+                    text-align: center;
+                }
+            }
+        }
+        .content-2 {
+            width: 100%;
+            margin-top: 4rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 960px) {
+    .content {
+        @include flex($justifyContent: left, $alignItems: left);
+        flex-wrap: wrap;
+        .content-1 {
+            .content-button {
+                @include flex($justifyContent: space-around);
+                row-gap: 1.5rem;
+                .gs {
+                    text-align: center;
+                    width: 100%;
+                }
+                .hiw {
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
