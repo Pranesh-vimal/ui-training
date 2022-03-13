@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task 7</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/90c41f30c4.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="question-box">
+                <h1>Color Finder</h1>
+                <div class="input-group">
+                    <input type="text" id="hexcode" readonly value="" />
+                </div>
+            </div>
+            <div class="answer-container" id="answer-container">
+                <div
+                    id="color-1"
+                    class="color-1"
+                    onclick="checkColor(this)"
+                ></div>
+                <div
+                    id="color-2"
+                    class="color-2"
+                    onclick="checkColor(this)"
+                ></div>
+                <div
+                    id="color-3"
+                    class="color-3"
+                    onclick="checkColor(this)"
+                ></div>
+                <div
+                    id="color-4"
+                    class="color-4"
+                    onclick="checkColor(this)"
+                ></div>
+                <div
+                    id="color-5"
+                    class="color-5"
+                    onclick="checkColor(this)"
+                ></div>
+                <div
+                    id="color-6"
+                    class="color-6"
+                    onclick="checkColor(this)"
+                ></div>
+            </div>
+            <div class="result" id="result">
+                <div class="result-color" id="result-color"></div>
+                <div class="result-text" id="result-text"></div>
+                <button class="btn" id="try-again" onclick="location.reload()">
+                    Try Again
+                </button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
