@@ -1,0 +1,212 @@
+.tasks {
+    margin: 1rem 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 1rem;
+
+    .task {
+        width: 20%;
+        background-color: $secondary-color;
+        border-radius: 5px;
+        padding: 1.5rem;
+        box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.2);
+
+        .task-title {
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            width: fit-content;
+        }
+
+        .task-description {
+            margin-top: 1.5rem;
+            line-height: 1.5rem;
+        }
+
+        .task-reactions {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .comments {
+                display: flex;
+                font-weight: lighter;
+                color: $comment-color;
+
+                div {
+                    padding: 0rem 0.2rem;
+
+                    span {
+                        margin-left: 0.2rem;
+                    }
+                }
+            }
+
+            .assigned {
+                display: flex;
+
+                img {
+                    height: 2rem;
+                    width: 2rem;
+                    border-radius: 50%;
+                    transition: transform 1s ease-in-out;
+
+                    &:not(:first-child) {
+                        margin-left: -1rem;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .plus {
+                    height: 2rem;
+                    width: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    color: $plus-color;
+                    margin-left: -1rem;
+                    background-color: $background-color;
+                    font-weight: bold;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &.management {
+            border-top: 4px solid $management-color;
+
+            .task-title {
+                color: $management-color;
+                background-color: $management-bg-color;
+            }
+
+            .task-reactions {
+                .comments {
+                    div:hover {
+                        color: $management-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &.sales {
+            border-top: 4px solid $sales-color;
+
+            .task-title {
+                color: $sales-color;
+                background-color: $sales-bg-color;
+            }
+
+            .task-reactions {
+                .comments {
+                    div:hover {
+                        color: $sales-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &.operations {
+            border-top: 4px solid $operations-color;
+
+            .task-title {
+                color: $operations-color;
+                background-color: $operations-bg-color;
+            }
+
+            .task-reactions {
+                .comments {
+                    div:hover {
+                        color: $operations-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &.marketing {
+            border-top: 4px solid $marketing-color;
+
+            .task-title {
+                color: $marketing-color;
+                background-color: $marketing-bg-color;
+            }
+
+            .task-reactions {
+                .comments {
+                    div:hover {
+                        color: $marketing-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &.human-resources {
+            border-top: 4px solid $human-resources-color;
+
+            .task-title {
+                color: $human-resources-color;
+                background-color: $human-resources-bg-color;
+            }
+
+            .task-reactions {
+                .comments {
+                    div:hover {
+                        color: $human-resources-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &.finance {
+            border-top: 4px solid $finance-color;
+
+            .task-title {
+                color: $finance-color;
+                background-color: $finance-bg-color;
+            }
+
+            .task-reactions {
+                .comments {
+                    div:hover {
+                        color: $finance-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &.customer-service {
+            border-top: 4px solid $customer-service-color;
+
+            .task-title {
+                color: $customer-service-color;
+                background-color: $customer-service-bg-color;
+            }
+
+            .task-reactions {
+                .comments {
+                    div:hover {
+                        color: $customer-service-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
